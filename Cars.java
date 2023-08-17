@@ -4,15 +4,19 @@ public class Cars
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        int n;
-        n=sc.nextInt();
-        if(n%4==0)
+        int n1,n2,x,m;
+        n1=sc.nextInt();
+        n2=sc.nextInt();
+        x=sc.nextInt();
+        m=((x+n1)/n2)+1;
+        if(n2<n1)
         {
-            System.out.println(n/4);
+            System.out.println("-1");
         }
         else
         {
-            System.out.println(n/4+1);
+            System.out.println(m);
         }
+        
     }
 }
